@@ -19,8 +19,10 @@ jobs:
         with:
           python-version: '3.7.11'
 
-      - name: Install Requirements
+      - name: Install flask
         run:  pip install flask
+        
+      - name: Install flask-wtf
         run:  pip install flask-wtf
               
       - name: Unit Test
